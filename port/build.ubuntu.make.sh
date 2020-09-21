@@ -18,5 +18,5 @@ cmdX(){
 }
 
 cmdX file-to-cs --touch=source/quantum-script-extension-job.cpp --file-in=source/quantum-script-extension-job.js --file-out=source/quantum-script-extension-job.src --is-string --name=extensionJobSource
-cmdX xyo-cc --mode=$ACTION @util/quantum-script-extension-job.static.compile.info
-cmdX xyo-cc --mode=$ACTION @util/quantum-script-extension-job.dynamic.compile.info
+cmdX xyo-cc --mode=$ACTION @util/quantum-script-extension-job.static.compile
+cmdX xyo-cc --mode=$ACTION @util/quantum-script-extension-job.dynamic.compile
