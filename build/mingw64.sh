@@ -8,7 +8,8 @@ export XYO_PATH_RELEASE=$HOME/SDK/release
 export XYO_PATH_REPOSITORY_LIBRARY=
 export PATH=$PATH:/c/msys64/mingw64/bin/../libexec;
 
-/bin/sh -- ./port/build.ubuntu.sh $1
+export WSL_BUILD_PROCESS_PATH=$HOME/SDK/source/quantum-script-extension-job
+/bin/sh -- ./build/wsl.process.sh $1
 RETV=$?
 
 if [ "$RETV" = "1" ]; then

@@ -17,8 +17,8 @@ exit 1
 
 set XYO_PATH_RELEASE=release
 
-call :cmdX call port\build.msvc.cmd make
-call :cmdX call port\build.msvc.cmd sign
-call :cmdX call port\build.msvc.cmd install
-call :cmdX call port\build.msvc.cmd install-release
-call :cmdX xyo-cc quantum-script-extension-job --archive-release-sha512 --version-file=source/quantum-script-extension-job.version.ini
+call :cmdX call build\msvc.cmd make
+call :cmdX call build\msvc.cmd sign
+call :cmdX call build\msvc.cmd install
+call :cmdX call build\msvc.cmd install-release
+call :cmdX xyo-cc quantum-script-extension-job --archive-release-sha512 --version-file=version.ini

@@ -19,6 +19,6 @@ exit 1
 :StepX
 
 call :cmdX file-to-cs --touch=source/quantum-script-extension-job.cpp --file-in=source/quantum-script-extension-job.js --file-out=source/quantum-script-extension-job.src --is-string --name=extensionJobSource
-call :cmdX xyo-cc --mode=%ACTION% @util/quantum-script-extension-job.static.compile
-call :cmdX xyo-cc --mode=%ACTION% @util/quantum-script-extension-job.dynamic.compile
+call :cmdX xyo-cc --mode=%ACTION% @build/source/quantum-script-extension-job.static.compile
+call :cmdX xyo-cc --mode=%ACTION% @build/source/quantum-script-extension-job.dynamic.compile
 
