@@ -6,7 +6,7 @@ Script.requireExtension("Console");
 Script.requireExtension("Thread");
 Script.requireExtension("Job");
 
-var job = new Job(8, 15);
+var job = new Job();
 
 job.onStart = function(process) {
 	Console.writeLn("START: " + process.info);

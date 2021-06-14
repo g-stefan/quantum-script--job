@@ -11,8 +11,8 @@ Script.requireExtension("Thread");
 Script.requireExtension("Shell");
 Script.requireExtension("Math");
 
-function Job(processMaxCount) {
-	.processMaxCount = processMaxCount;
+function Job() {
+	.processMaxCount = Processor.getCount();
 	.processMaxTicks = 60 * 1; // 1 minute
 	.processJobList = [];
 
