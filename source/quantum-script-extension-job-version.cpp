@@ -15,10 +15,10 @@ namespace Quantum {
 			namespace Job {
 				namespace Version {
 
-					static const char *version_ = "1.6.0";
-					static const char *build_ = "7";
-					static const char *versionWithBuild_ = "1.6.0.7";
-					static const char *datetime_ = "2021-07-06 15:11:48";
+					static const char *version_ = "2.0.0";
+					static const char *build_ = "10";
+					static const char *versionWithBuild_ = "2.0.0.10";
+					static const char *datetime_ = "2021-07-23 16:34:03";
 
 					const char *version() {
 						return version_;
