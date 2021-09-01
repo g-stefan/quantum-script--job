@@ -1,7 +1,7 @@
 # Quantum Script Extension Job
 
 ```javascript
-Job(processMaxCount);
+Job();
 this.onStart(process);
 this.onEnd(process);
 this.onTimedout(process);

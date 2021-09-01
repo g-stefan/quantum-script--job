@@ -38,7 +38,6 @@ function Job() {
 	};
 
 	.addProcess = function(cmd, info, synchronizedKey) {
-		var synchronizedJob =
 		.processJobList[.processJobList.length] = {
 			cmd: cmd,
 			done: false,
@@ -55,7 +54,6 @@ function Job() {
 	};
 
 	.addThread = function(fn, fnThis, parameters, info, synchronizedKey) {
-		var synchronizedJob =
 		.processJobList[.processJobList.length] = {
 			fn: fn,
 			fnThis: fnThis,
@@ -139,7 +137,7 @@ function Job() {
 					continue;
 				};
 			};
-			if(count == processMaxCount) {
+			if(count == .processMaxCount) {
 				continue;
 			};
 			// run new processes
@@ -159,7 +157,7 @@ function Job() {
 						};
 						list[list.length] = .processJobList[k];
 						count++;
-						if(count == processMaxCount) {
+						if(count == .processMaxCount) {
 							break;
 						};
 					};
