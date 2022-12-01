@@ -1,8 +1,0 @@
---dll qse-job
---project-base=quantum-script-extension-job
---build-include
---dll-no-version
---use-project=quantum-script
---install-dev
---install-inc=quantum-script-extension
---no-version

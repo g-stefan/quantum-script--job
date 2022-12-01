@@ -1,6 +1,0 @@
---lib qse-job
---project-base=quantum-script-extension-job
---build-include
---use-project=quantum-script.static
---install-dev
---install-inc=quantum-script-extension

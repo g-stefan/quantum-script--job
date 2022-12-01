@@ -1,0 +1,11 @@
+// Quantum Script Extension Job
+// Copyright (c) 2022 Grigore Stefan <g_stefan@yahoo.com>
+// MIT License (MIT) <http://opensource.org/licenses/MIT>
+// SPDX-FileCopyrightText: 2022 Grigore Stefan <g_stefan@yahoo.com>
+// SPDX-License-Identifier: MIT
+
+#include <XYO/QuantumScript.Extension/Job/Library.rh>
+#include <XYO/QuantumScript.Extension/Job/Copyright.rh>
+#include <XYO/QuantumScript.Extension/Job/Version.rh>
+
+XYO_APPLICATION_VERSION_INFO(XYO_QUANTUMSCRIPT_EXTENSION_JOB,"quantum-script--job.dll","Quantum Script Extension Job")
