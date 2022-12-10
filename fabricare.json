@@ -1,7 +1,7 @@
 {
 	"project": {
 		"name":"quantum-script--job",
-		"type":"xyo-cpp-project",
+		"type":"xyo-cpp",
 		"make" : "lib-and-dll",
 		"SPDX-License-Identifier": "MIT",
 		"sourcePath" : "XYO/QuantumScript.Extension/Job",

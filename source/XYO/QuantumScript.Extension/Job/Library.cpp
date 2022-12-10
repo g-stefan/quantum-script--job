@@ -13,22 +13,22 @@
 
 namespace XYO::QuantumScript::Extension::Job {
 
-				void registerInternalExtension(Executive *executive) {
-					executive->registerInternalExtension("Job", initExecutive);
-				};
+	void registerInternalExtension(Executive *executive) {
+		executive->registerInternalExtension("Job", initExecutive);
+	};
 
-				void initExecutive(Executive *executive, void *extensionId) {
+	void initExecutive(Executive *executive, void *extensionId) {
 
-					String info = "Job\r\n";
-					info << License::shortLicense();
+		String info = "Job\r\n";
+		info << License::shortLicense();
 
-					executive->setExtensionName(extensionId, "Job");
-					executive->setExtensionInfo(extensionId, info);
-					executive->setExtensionVersion(extensionId, Extension::Job::Version::versionWithBuild());
-					executive->setExtensionPublic(extensionId, true);
+		executive->setExtensionName(extensionId, "Job");
+		executive->setExtensionInfo(extensionId, info);
+		executive->setExtensionVersion(extensionId, Extension::Job::Version::versionWithBuild());
+		executive->setExtensionPublic(extensionId, true);
 
-					executive->compileStringX(librarySource);
-				};
+		executive->compileStringX(librarySource);
+	};
 
 };
 
