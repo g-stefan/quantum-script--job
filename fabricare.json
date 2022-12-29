@@ -16,6 +16,8 @@
 			"quantum-script--shell",
 			"quantum-script--shellfind",
 			"quantum-script--math"
-		]
+		],
+		"hasRelease" : true,
+		"githubRelease" : true
 	}
 }
