@@ -1,23 +1,27 @@
 {
-	"project": {
-		"name":"quantum-script--job",
-		"type":"xyo-cpp",
-		"make" : "lib-and-dll",
-		"SPDX-License-Identifier": "MIT",
-		"sourcePath" : "XYO/QuantumScript.Extension/Job",
-		"testSource" : [
-			"test.01"
+	"solution": {
+		"name" : "quantum-script--job",
+		"type" : "xyo-cpp",
+		"projects": [
+			{
+				"name" : "quantum-script--job",
+				"make" : "lib-and-dll",
+				"SPDX-License-Identifier": "MIT",
+				"sourcePath" : "XYO/QuantumScript.Extension/Job",
+				"testSource" : [
+					"test.01"
+				],
+				"dependency" : [
+					"quantum-script",
+					"quantum-script--console",
+					"quantum-script--buffer",
+					"quantum-script--thread",
+					"quantum-script--shell",
+					"quantum-script--shellfind",
+					"quantum-script--math"
+				]
+			}
 		],
-		"dependency" : [
-			"quantum-script",
-			"quantum-script--console",
-			"quantum-script--buffer",
-			"quantum-script--thread",
-			"quantum-script--shell",
-			"quantum-script--shellfind",
-			"quantum-script--math"
-		],
-		"hasRelease" : true,
-		"githubRelease" : true
+		"hasGithub" : true
 	}
 }
