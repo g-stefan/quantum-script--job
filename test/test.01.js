@@ -22,12 +22,12 @@ job.onTimedout = function(process) {
 	Console.writeLn("TIMEDOUT: " + process.info);
 };
 
-job.addProcess(Application.getExecutable() + " test/test.01.sub.10.js", "10");
-job.addProcess(Application.getExecutable() + " test/test.01.sub.20.js", "20");
-job.addProcess(Application.getExecutable() + " test/test.01.sub.10.js", "30-sync", "30");
-job.addProcess(Application.getExecutable() + " test/test.01.sub.10.js", "31-sync", "30");
-job.addProcess(Application.getExecutable() + " test/test.01.sub.10.js", "40-sync", "40");
-job.addProcess(Application.getExecutable() + " test/test.01.sub.10.js", "41-sync", "40");
+job.addProcess("quantum-script ../../test/test.01.sub.10.js", "10");
+job.addProcess("quantum-script ../../test/test.01.sub.20.js", "20");
+job.addProcess("quantum-script ../../test/test.01.sub.10.js", "30-sync", "30");
+job.addProcess("quantum-script ../../test/test.01.sub.10.js", "31-sync", "30");
+job.addProcess("quantum-script ../../test/test.01.sub.10.js", "40-sync", "40");
+job.addProcess("quantum-script ../../test/test.01.sub.10.js", "41-sync", "40");
 
 job.addThread(function() {
 	Script.requireExtension("Thread");
@@ -50,5 +50,6 @@ job.addThread(function() {
 }, null, null, "51-sync", "50");
 
 job.process();
+
 
 Console.writeLn("-> test 01 ok");

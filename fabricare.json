@@ -8,9 +8,6 @@
 				"make" : "lib-and-dll",
 				"SPDX-License-Identifier": "MIT",
 				"sourcePath" : "XYO/QuantumScript.Extension/Job",
-				"testSource" : [
-					"test.01"
-				],
 				"dependency" : [
 					"quantum-script",
 					"quantum-script--console",
@@ -19,6 +16,16 @@
 					"quantum-script--shell",
 					"quantum-script--shellfind",
 					"quantum-script--math"
+				]
+			},
+			{
+				"name" : "test.01",
+				"make" : "exe.static",
+				"category" : "test",
+				"SPDX-License-Identifier": "Unlicense",
+				"dependency" : [
+					"quantum-script--job",
+					"quantum-script--application"
 				]
 			}
 		],

@@ -6,6 +6,7 @@
 #include <XYO/QuantumScript.hpp>
 #include <XYO/QuantumScript.Extension/Console.hpp>
 #include <XYO/QuantumScript.Extension/Buffer.hpp>
+#include <XYO/QuantumScript.Extension/Application.hpp>
 #include <XYO/QuantumScript.Extension/Shell.hpp>
 #include <XYO/QuantumScript.Extension/ShellFind.hpp>
 #include <XYO/QuantumScript.Extension/Thread.hpp>
@@ -17,6 +18,7 @@ using namespace XYO::QuantumScript;
 void initExecutive(Executive *executive) {
 	Extension::Console::registerInternalExtension(executive);
 	Extension::Buffer::registerInternalExtension(executive);
+	Extension::Application::registerInternalExtension(executive);
 	Extension::Shell::registerInternalExtension(executive);
 	Extension::ShellFind::registerInternalExtension(executive);
 	Extension::Thread::registerInternalExtension(executive);
