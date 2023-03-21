@@ -20,7 +20,7 @@ namespace XYO::QuantumScript::Extension::Job {
 	void initExecutive(Executive *executive, void *extensionId) {
 
 		String info = "Job\r\n";
-		info << License::shortLicense();
+		info << License::shortLicense().c_str();
 
 		executive->setExtensionName(extensionId, "Job");
 		executive->setExtensionInfo(extensionId, info);
