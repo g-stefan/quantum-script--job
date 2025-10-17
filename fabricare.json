@@ -19,6 +19,27 @@
 				]
 			},
 			{
+				"name": "quantum-script--job.static",
+				"make": "lib",
+				"category": "make",
+				"SPDX-License-Identifier": "MIT",
+				"sourcePath" : "XYO/QuantumScript.Extension/Job",
+				"dependency" : [
+					"quantum-script.static",
+					"quantum-script--console.static",
+					"quantum-script--buffer.static",
+					"quantum-script--thread.static",
+					"quantum-script--shell.static",
+					"quantum-script--shellfind.static",
+					"quantum-script--math.static"
+				],
+				"dependencyDefines" : [
+					"XYO_QUANTUMSCRIPT_EXTENSION_JOB_LIBRARY"
+				],
+				"linkVersion": "quantum-script--job",
+				"crt": "static"
+			},
+			{
 				"name" : "test.01",
 				"make" : "exe",
 				"category" : "test",
